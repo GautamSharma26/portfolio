@@ -2,15 +2,15 @@ import React from 'react'
 const RootPageMainD = () => {
   return (
     <div className="min-h-[calc(100vh-144px)] overflow-auto">
-      <div className="relative border-2 md:left-[42%] md:top-36 bg-green-300 h-48 w-48 rounded-full text-center animate-bounce">
-      <div className='absolute top-20 left-16 w-16 animate-ping text-black font-bold'>
-        Welcome
-      </div> 
-        <div className="absolute border-2 top-28 left-32 h-36 w-36 bg-yellow-200 rounded-full text-center p-2">Skill</div>
-        <div className="absolute border-2 top-28 right-32 h-36 w-36 bg-red-400 rounded-full text-center p-2">Experience</div>
-        <div className="absolute border-2 bottom-32 left-32 h-36 w-36 bg-orange-300 rounded-full text-center p-2">My Blogs</div>
-        <div className="absolute border-2 bottom-32 right-32 h-36 w-36 bg-blue-300 rounded-full text-center p-2 hover:animate-spin">Projects</div>
+      <div className="relative border-2 left-[42%] md:top-42 bg-green-300 md:h-48 md:w-48 lg:top-[320px] md:rounded-full sm:rounded-full sm:top-[260px] sm:w-32 sm:h-32 text-center animate-bounce">
+        <div className='absolute md:top-20 md:left-16 md:w-16 sm:top-12 sm:left-6 animate-ping text-black font-bold'>
+          Welcome
         </div>
+        <div className="absolute border-2 md:top-28 md:left-32 md:h-36 md:w-36 sm:h-20 sm:w-20 sm:top-20 sm:left-20 bg-yellow-200 rounded-full text-center p-2 break-word">Skill</div>
+        <div className="absolute border-2 md:top-28 md:right-32 md:h-36 md:w-36 sm:h-20 sm:w-20 sm:top-20 sm:right-20 bg-red-400 rounded-full text-center p-2 break-words">Experience</div>
+        <div className="absolute border-2 md:bottom-32 md:left-32 md:h-36 md:w-36 sm:h-20 sm:w-20 sm:bottom-20 sm:left-20 bg-orange-300 rounded-full text-center p-2">My Blogs</div>
+        <div className="absolute border-2 md:bottom-32 md:right-32 md:h-36 md:w-36 sm:h-20 sm:w-20 sm:bottom-20 sm:right-20 bg-blue-300 rounded-full text-center p-2 hover:animate-spin break-words">Projects</div>
+      </div>
     </div>
   );
 };
