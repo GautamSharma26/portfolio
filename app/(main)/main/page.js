@@ -1,7 +1,8 @@
 import Link from 'next/link'
 const MainPage = () => {
   return (
-    <div className='relative pt-1 grid sm:grid-cols-1 md:grid-cols-3 gap-y-2 md:left-52 sm:left-48'>
+    <div>
+    <div className='relative pt-1 grid sm:grid-cols-1 md:grid-cols-3 gap-y-2 md:ml-36'>
       <div className='break-words bg-pink-300 border-solid border-black border-4 hover:border-dotted w-52 rounded-lg h-52'>
         <p className='m-2 font-bold bg-red-500 w-16 text-center rounded-md'>Python</p>
         <p className='relative left-8 font-bold bg-red-500 w-28 text-center rounded-md mt-2'>Frameworks</p>
@@ -28,8 +29,11 @@ const MainPage = () => {
           <li>Jenkins CI/CD</li>
         </ul>
       </div>
-
-
+    
+    </div>
+    <div className='grid justify-center w-screen'>
+    <div className='my-2 rounded-md bg-blue-300 text-center w-20 hover:bg-orange-300'><Link href="/">Home</Link></div>
+    </div>
     </div>
   )
 }
