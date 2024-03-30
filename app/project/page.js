@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-const page = () => {
+const Page = () => {
     return (
         <>
             <div className='grid text-center animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-2xl font-black'>Projects Highlight</div>
@@ -63,4 +63,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

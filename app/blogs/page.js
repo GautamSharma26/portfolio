@@ -1,6 +1,6 @@
 import React from 'react'
 
-const page = () => {
+const Page = () => {
   return (
     <div>
     <h1 class="text-5xl text-white font-bold mb-8 animate-pulse">
@@ -12,4 +12,4 @@ const page = () => {
 </div>
   )
 }
-export default page
+export default Page
