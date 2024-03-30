@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 import { Chart } from "chart.js";
 import Link from 'next/link';
 
-const Page = () => {
+const ExpPage = () => {
   useEffect(() => {
     const options = {
       scales: {
@@ -90,4 +90,4 @@ const Page = () => {
   )
 }
 
-export default Page
+export default ExpPage
