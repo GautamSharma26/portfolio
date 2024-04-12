@@ -1,66 +1,75 @@
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
 
 const Page = () => {
-    return (
-        <>
-            <div className='grid text-center animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-2xl font-black'>Projects Highlight</div>
-            <div className='grid grid-cols-1 p-2 m-2 rounded-md bg-gradient-to-tr from-gray-400 to-stone-400 border-black border-2 '>
-                <div className='grid text-center hover:scale-150 transition-all duration-500 cursor-pointer'>Pizza delivery</div>
-                <div className='grid grid-cols-2 text-center mt-3 md:grid-cols-2 sm:grid-cols-2'>
-                    <div className='grid bg-gradient-to-l from-gray-500 via-purple-500 to-orange-500 border-black border-2 rounded-lg'>
-                        <h1 className='underline font-serif font-semibold'>Description</h1>
-                        <p className='px-2'><em>
-                            So I started to walk into the water. I won't lie to you boys, I was
-                            terrified. But I pressed on, and as I made my way past the breakers
-                            a strange calm came over me. I don't know if it was divine intervention
-                            or the kinship of all living things but I tell you Jerry at that moment,
-                            I was a marine biologist.</em>
-                        </p>
-                        <h1 className='underline font-serif font-semibold'>Tech Stack</h1>
-                        <ul role="list" className="marker:text-purple-400 list-disc pl-6 text-black-500 text-start md:ml-36 sm:ml-36 ">
-                            <li>5 cups chopped Porcini mushrooms</li>
-                            <li>1/2 cup of olive oil</li>
-                            <li>3lb of celery</li>
-                        </ul>
+  return (
+    <div className="container mx-auto px-4 py-8">
+      {/* Section Title with Animation */}
+      <h1 className="text-4xl md:text-5xl font-bold text-center mb-8 text-gray-900 animate-bounce">Projects Highlight</h1>
 
-
-                    </div>
-                    <div className='bg-gradient-to-l from-orange-500 via-purple-500 to-gray-500 border-black border-2 rounded-lg relative h-auto'>
-                        <Image src="/static/images/Pizza On Your Way.png" fill={true}></Image>
-                    </div>
-                </div>
-
+      {/* First Project with Graphics */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-gradient-to-r from-gray-200 to-gray-100 rounded-lg border-2 border-gray-300 p-4 md:p-8 shadow-lg">
+        {/* Project Image with Graphic */}
+        <div className="relative h-48 md:h-auto overflow-hidden rounded-lg">
+          <div className="absolute inset-0 z-10 flex items-center justify-center">
+            <div className="bg-white p-4 rounded-full transform rotate-45 shadow-md">
+              <svg className="w-12 h-12 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+              </svg>
             </div>
-            <div className='grid grid-cols-1 p-2 m-2 rounded-md bg-gradient-to-tr from-gray-400 to-stone-400 border-black border-2'>
-                <div className='grid text-center hover:scale-150 transition-all duration-500 cursor-pointer'>Portal Management</div>
-                <div className='grid grid-cols-2 text-center mt-3 md:grid-cols-2 sm:grid-cols-2'>
-                    <div className='grid bg-gradient-to-l from-gray-500 via-purple-500 to-orange-500 border-black border-2 rounded-lg'>
-                        <h1 className='underline font-serif font-semibold'>Description</h1>
-                        <p className='px-2'><em>
-                            So I started to walk into the water. I won't lie to you boys, I was
-                            terrified. But I pressed on, and as I made my way past the breakers
-                            a strange calm came over me. I don't know if it was divine intervention
-                            or the kinship of all living things but I tell you Jerry at that moment,
-                            I was a marine biologist.</em>
-                        </p>
-                        <h1 className='underline font-serif font-semibold'>Tech Stack</h1>
-                        <ul role="list" className="marker:text-purple-400 list-disc pl-6 text-black-500 text-start md:ml-36 sm:ml-36 ">
-                            <li>5 cups chopped Porcini mushrooms</li>
-                            <li>1/2 cup of olive oil</li>
-                            <li>3lb of cely</li>
-                        </ul>
+          </div>
+          <Image src="/static/images/Pizza On Your Way.png" alt="Pizza Delivery" layout="fill" objectFit="cover" className="rounded-lg" />
+        </div>
 
+        {/* Project Details */}
+        <div className="flex flex-col justify-center">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">Pizza Delivery</h2>
+          <p className="text-gray-700 mb-4">
+            So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.
+          </p>
+          <div className="text-gray-700">
+            <h3 className="text-lg font-semibold mb-2">Tech Stack</h3>
+            <ul className="list-disc pl-6 mb-0">
+              <li>5 cups chopped Porcini mushrooms</li>
+              <li>1/2 cup of olive oil</li>
+              <li>3lb of celery</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-                    </div>
-                    <div className='bg-gradient-to-l from-orange-500 via-purple-500 to-gray-500 border-black border-2 rounded-lg relative h-auto'>
-                        <Image src="/static/images/Pizza On Your Way.png" fill={true}></Image>
-                    </div>
-                </div>
-
+      {/* Second Project with Graphics */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-gradient-to-r from-gray-200 to-gray-100 rounded-lg border-2 border-gray-300 p-4 md:p-8 shadow-lg mt-8">
+        {/* Project Image with Graphic */}
+        <div className="relative h-48 md:h-auto overflow-hidden rounded-lg">
+          <div className="absolute inset-0 z-10 flex items-center justify-center">
+            <div className="bg-white p-4 rounded-full transform rotate-45 shadow-md">
+              <svg className="w-12 h-12 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+              </svg>
             </div>
-        </>
-    )
-}
+          </div>
+          <Image src="/static/images/portal1.jpg" alt="Portal Management" layout="fill" objectFit="cover" className="rounded-lg" />
+        </div>
 
-export default Page
+        {/* Project Details */}
+        <div className="flex flex-col justify-center">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">Portal Management</h2>
+          <p className="text-gray-700 mb-4">
+            So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.
+          </p>
+          <div className="text-gray-700">
+            <h3 className="text-lg font-semibold mb-2">Tech Stack</h3>
+            <ul className="list-disc pl-6 mb-0">
+              <li>5 cups chopped Porcini mushrooms</li>
+              <li>1/2 cup of olive oil</li>
+              <li>3lb of celery</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Page;
