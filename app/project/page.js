@@ -34,7 +34,7 @@ const page = () => {
             </div>
             <div className='grid grid-cols-1 p-2 m-2 rounded-md bg-gradient-to-tr from-gray-400 to-stone-400 border-black border-2'>
                 <div className='grid text-center hover:scale-150 transition-all duration-500 cursor-pointer'>Portal Management</div>
-                <div className='grid grid-cols-2 text-center mt-3 md:grid-cols-2 sm:grid-cols-1'>
+                <div className='grid grid-cols-2 text-center mt-3 md:grid-cols-2 sm:grid-cols-2'>
                     <div className='grid bg-gradient-to-l from-gray-500 via-purple-500 to-orange-500 border-black border-2 rounded-lg'>
                         <h1 className='underline font-serif font-semibold'>Description</h1>
                         <p className='px-2'><em>
