@@ -16,6 +16,7 @@
     "sharp": "^0.33.3"
   },
   "devDependencies": {
+    "@types/chart.js": "^2.9.41",
     "@types/node": "20.10.6",
     "@types/react": "18.2.46",
     "autoprefixer": "^10.0.1",
