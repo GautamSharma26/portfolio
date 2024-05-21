@@ -25,14 +25,16 @@ const Page = () => {
         <div className="flex flex-col justify-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">Pizza Delivery</h2>
           <p className="text-gray-700 mb-4">
-            So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.
+            This project is based on Pizza deleivery as per User order. In this project I have used Django channels for real time data updation in database with the help of Django signals. I have also used Celery into this for running background task. I have also worked on Frontend side of this project. Fronted is developed using Reat js.
           </p>
           <div className="text-gray-700">
             <h3 className="text-lg font-semibold mb-2">Tech Stack</h3>
             <ul className="list-disc pl-6 mb-0">
-              <li>5 cups chopped Porcini mushrooms</li>
-              <li>1/2 cup of olive oil</li>
-              <li>3lb of celery</li>
+              <li>DRF</li>
+              <li>React js</li>
+              <li>Celery</li>
+              <li>Channels</li>
+              <li>Redis</li>
             </ul>
           </div>
         </div>
@@ -56,14 +58,14 @@ const Page = () => {
         <div className="flex flex-col justify-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">Portal Management</h2>
           <p className="text-gray-700 mb-4">
-            So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all living things but I tell you Jerry at that moment, I was a marine biologist.
+            This project is used for Portal Management. In this project I have used celery for running background task and scheduled task.I have mostly worked on authentication, time entry and calendar module.I have also explore myself in Django Permission in this project.
           </p>
           <div className="text-gray-700">
             <h3 className="text-lg font-semibold mb-2">Tech Stack</h3>
             <ul className="list-disc pl-6 mb-0">
-              <li>5 cups chopped Porcini mushrooms</li>
-              <li>1/2 cup of olive oil</li>
-              <li>3lb of celery</li>
+              <li>DRF</li>
+              <li>Celery</li>
+              <li>Postgres</li>
             </ul>
           </div>
         </div>
