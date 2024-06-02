@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Page = () => {
   return (
@@ -70,7 +71,11 @@ const Page = () => {
           </div>
         </div>
       </div>
+      <div className='grid justify-center w-screen'>
+        <div className='mt-4 rounded-md bg-blue-300 text-center w-20 hover:bg-green-300'><Link href="/">Home</Link></div>
+      </div>
     </div>
+
   );
 };
 
