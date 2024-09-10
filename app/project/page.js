@@ -26,7 +26,7 @@ const Page = () => {
         <div className="flex flex-col justify-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">Pizza Delivery</h2>
           <p className="text-gray-700 mb-4">
-            This project is based on Pizza deleivery as per User order. In this project I have used Django channels for real time data updation in database with the help of Django signals. I have also used Celery into this for running background task. I have also worked on Frontend side of this project. Fronted is developed using Reat js.
+            This project is based on Pizza deleivery as per User order. In this project I have used Django channels for real time data updation in database with the help of Django signals. I have also used Celery into this for running background task. I have also worked on Frontend side of this project. Fronted is developed using React js.
           </p>
           <div className="text-gray-700">
             <h3 className="text-lg font-semibold mb-2">Tech Stack</h3>
