@@ -18,7 +18,7 @@ const ExpPage = () => {
     var myChart = new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ["Inexture - 2Y Cont..", "upcoming"],
+        labels: ["Python Full Stack - 3Y Cont.."],
         datasets: [{
           data: [75],
           label: "Python",
@@ -27,29 +27,36 @@ const ExpPage = () => {
           borderWidth: 2
         }, {
           data: [80],
-          label: "Django",
+          label: "FastApi/Flask",
           borderColor: "rgb(255, 205, 86)",
           backgroundColor: "rgb(255, 205, 86,0.5)",
           borderWidth: 2
         }, {
           data: [90],
-          label: "Drf",
+          label: "Drf/Django",
           borderColor: "rgb(255, 99, 132)",
           backgroundColor: "rgb(255, 99, 132,0.5)",
           borderWidth: 2
         },
         {
-          data: [39],
+          data: [60],
           label: "Cloud",
           borderColor: "rgb(200, 155, 200)",
           backgroundColor: "rgb(200, 155, 200,0.5)",
           borderWidth: 2
         },
         {
-          data: [50],
-          label: "FastAPI",
+          data: [39],
+          label: "Kubernetes",
           borderColor: "rgb(180, 180, 155)",
           backgroundColor: "rgb(180, 180, 155,0.5)",
+          borderWidth: 2
+        },
+        {
+          data: [55],
+          label: "AI",
+          borderColor: "rgb(180, 180, 200)",
+          backgroundColor: "rgb(180, 200, 250,0.5)",
           borderWidth: 2
         }
         ]

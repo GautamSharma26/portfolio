@@ -67,6 +67,39 @@ const Page = () => {
               <li>DRF</li>
               <li>Celery</li>
               <li>Postgres</li>
+              <li>EC2</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Third Project with Graphics */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-gradient-to-r from-gray-200 to-gray-100 rounded-lg border-2 border-gray-300 p-4 md:p-8 shadow-lg mt-8">
+        {/* Project Image with Graphic */}
+        <div className="relative h-48 md:h-auto overflow-hidden rounded-lg">
+          <div className="absolute inset-0 z-10 flex items-center justify-center">
+            <div className="bg-white p-4 rounded-full transform rotate-45 shadow-md">
+              <svg className="w-12 h-12 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+          </div>
+          <Image src="/static/images/patrick-hendry-w5SgojGZooI-unsplash.jpg" alt="Portal Management" layout="fill" objectFit="cover" className="rounded-lg" />
+        </div>
+
+        {/* Project Details */}
+        <div className="flex flex-col justify-center">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">Yoga Posture Detection</h2>
+          <p className="text-gray-700 mb-4">
+          This project utilizes YOLO and MediaPipe for yoga pose detection, a custom dataset from Roboflow, and a Large Language Model for correction, to provide real-time feedback on yoga pose alignment
+          </p>
+          <div className="text-gray-700">
+            <h3 className="text-lg font-semibold mb-2">Tech Stack</h3>
+            <ul className="list-disc pl-6 mb-0">
+              <li>Streamlit</li>
+              <li>LLM</li>
+              <li>YOLO model</li>
+              <li>Mediapipe</li>
             </ul>
           </div>
         </div>

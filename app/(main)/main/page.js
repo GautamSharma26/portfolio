@@ -35,6 +35,17 @@ const MainPage = () => {
             <li>EC2/S3/lambda</li>
           </ul>
         </div>
+
+        {/* AI Section */}
+        <div className="bg-slate-400 border-black border-4 rounded-lg p-4 hover:border-dotted transition duration-300 ease-in-out">
+          <p className="font-bold text-red-500 text-center mb-2">AI/ML</p>
+         
+          <ul className="list-disc ml-6 mt-2">
+            <li>LLM</li>
+            <li>GenAI</li>
+            <li>VisionAI</li>
+          </ul>
+        </div>
       </div>
 
       {/* Home Button */}
