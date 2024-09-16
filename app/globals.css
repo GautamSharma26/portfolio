@@ -8,8 +8,6 @@ html,
 body {
     height: 100%;
     margin: 0;
-    overflow: hidden;
-    /* Prevent scrollbars on the body */
 }
 
 body {
@@ -29,82 +27,123 @@ body {
 
 .layout-container {
     display: flex;
+    flex-direction: column;
     flex: 1;
-    /* Allow the layout container to take available space */
     overflow: hidden;
-    /* Prevent scrollbars on the layout container */
-}
-
-.sidebar {
-    width: 50vw;
-    /* Sidebar takes half of the viewport width */
-    height: calc(100vh - 100px);
-    /* Full height minus the footer height */
-    overflow: auto;
-    /* Allow scrolling if the content overflows */
-    background-color: #f9f9f9;
-    /* Optional background color */
-    border-right: 1px solid #ddd;
-    /* Optional border */
-}
-
-.main-content {
-    width: 50vw;
-    /* Main content takes half of the viewport width */
-    height: calc(100vh - 100px);
-    /* Full height minus the footer height */
-    padding: 20px;
-    /* Add padding for content */
-    overflow: auto;
-    /* Allow scrolling if the content overflows */
-    background-color: #ffffff;
-    /* Ensure the background is white */
+    position: relative;
 }
 
 
-/* Make the iframe take full width and height of the sidebar */
+/* Button to open the modal */
 
-.streamlit-iframe {
+.open-modal-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color: #0070f3;
+    color: white;
     border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    text-align: center;
+}
+
+.open-modal-btn:hover {
+    background-color: #005bb5;
+}
+
+.emoji {
+    display: block;
+    font-size: 24px;
+    /* Size of the emoji */
+}
+
+.button-text {
+    display: block;
+    font-size: 10px;
+    /* Size of the text */
+    margin-top: 4px;
+    /* Space between emoji and text */
+}
+
+
+/* Modal overlay */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+
+/* Modal content */
+
+.modal-content {
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 80vw;
+    height: 80vh;
+    max-width: 800px;
+    max-height: 600px;
+}
+
+.streamlit-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* Close button inside modal */
+
+.close-modal-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.close-modal-btn:hover {
+    background-color: #cc0000;
 }
 
 
 /* Responsive Styles */
 
 @media (max-width: 768px) {
-    .layout-container {
-        flex-direction: column;
-        /* Stack sidebar and main content vertically on medium screens */
-    }
-    .sidebar,
-    .main-content {
-        width: 100%;
-        /* Full width of the viewport */
-        height: 50vh;
-        /* Each takes up half of the viewport height */
-    }
-    .sidebar {
-        border-right: none;
-        /* Remove right border on mobile */
-        border-bottom: 1px solid #ddd;
-        /* Add bottom border for separation */
+    .modal-content {
+        width: 90vw;
+        height: 90vh;
     }
 }
 
 @media (max-width: 480px) {
-    .layout-container {
-        flex-direction: column;
-        /* Ensure stacking on very small screens */
-    }
-    .sidebar,
-    .main-content {
-        height: 50vh;
-        /* Each takes up half of the viewport height */
-    }
-    .main-content {
-        padding: 10px;
-        /* Reduce padding for smaller screens */
+    .open-modal-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
     }
 }
