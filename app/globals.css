@@ -2,20 +2,109 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
-}
+/* globals.css */
 
-@media (prefers-color-scheme: dark) {
-     :root {
-        --foreground-rgb: 255, 255, 255;
-        --background-start-rgb: 0, 0, 0;
-        --background-end-rgb: 0, 0, 0;
-    }
+html,
+body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    /* Prevent scrollbars on the body */
 }
 
 body {
-    color: rgb(var(--foreground-rgb));
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    /* Adjust header styles as needed */
+}
+
+.footer {
+    /* Adjust footer styles as needed */
+    height: 100px;
+    /* Adjust the height according to your footer */
+}
+
+.layout-container {
+    display: flex;
+    flex: 1;
+    /* Allow the layout container to take available space */
+    overflow: hidden;
+    /* Prevent scrollbars on the layout container */
+}
+
+.sidebar {
+    width: 50vw;
+    /* Sidebar takes half of the viewport width */
+    height: calc(100vh - 100px);
+    /* Full height minus the footer height */
+    overflow: auto;
+    /* Allow scrolling if the content overflows */
+    background-color: #f9f9f9;
+    /* Optional background color */
+    border-right: 1px solid #ddd;
+    /* Optional border */
+}
+
+.main-content {
+    width: 50vw;
+    /* Main content takes half of the viewport width */
+    height: calc(100vh - 100px);
+    /* Full height minus the footer height */
+    padding: 20px;
+    /* Add padding for content */
+    overflow: auto;
+    /* Allow scrolling if the content overflows */
+    background-color: #ffffff;
+    /* Ensure the background is white */
+}
+
+
+/* Make the iframe take full width and height of the sidebar */
+
+.streamlit-iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .layout-container {
+        flex-direction: column;
+        /* Stack sidebar and main content vertically on medium screens */
+    }
+    .sidebar,
+    .main-content {
+        width: 100%;
+        /* Full width of the viewport */
+        height: 50vh;
+        /* Each takes up half of the viewport height */
+    }
+    .sidebar {
+        border-right: none;
+        /* Remove right border on mobile */
+        border-bottom: 1px solid #ddd;
+        /* Add bottom border for separation */
+    }
+}
+
+@media (max-width: 480px) {
+    .layout-container {
+        flex-direction: column;
+        /* Ensure stacking on very small screens */
+    }
+    .sidebar,
+    .main-content {
+        height: 50vh;
+        /* Each takes up half of the viewport height */
+    }
+    .main-content {
+        padding: 10px;
+        /* Reduce padding for smaller screens */
+    }
 }
