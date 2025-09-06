@@ -3,113 +3,120 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const Page = () => {
-  return (
-    <div className="container mx-auto px-4 py-8">
-      {/* Section Title with Animation */}
-      <h1 className="text-4xl md:text-5xl font-bold text-center mb-8 text-gray-900 animate-bounce">Projects Highlight</h1>
-
-      {/* First Project with Graphics */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-gradient-to-r from-gray-200 to-gray-100 rounded-lg border-2 border-gray-300 p-4 md:p-8 shadow-lg">
-        {/* Project Image with Graphic */}
-        <div className="relative h-48 md:h-auto overflow-hidden rounded-lg">
-          <div className="absolute inset-0 z-10 flex items-center justify-center">
-            <div className="bg-white p-4 rounded-full transform rotate-45 shadow-md">
-              <svg className="w-12 h-12 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-              </svg>
-            </div>
-          </div>
-          <Image src="/static/images/Pizza On Your Way.png" alt="Pizza Delivery" layout="fill" objectFit="cover" className="rounded-lg" />
-        </div>
-
-        {/* Project Details */}
-        <div className="flex flex-col justify-center">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4">Pizza Delivery</h2>
-          <p className="text-gray-700 mb-4">
-            This project is based on Pizza deleivery as per User order. In this project I have used Django channels for real time data updation in database with the help of Django signals. I have also used Celery into this for running background task. I have also worked on Frontend side of this project. Fronted is developed using React js.
-          </p>
-          <div className="text-gray-700">
-            <h3 className="text-lg font-semibold mb-2">Tech Stack</h3>
-            <ul className="list-disc pl-6 mb-0">
-              <li>DRF</li>
-              <li>React js</li>
-              <li>Celery</li>
-              <li>Channels</li>
-              <li>Redis</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      {/* Second Project with Graphics */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-gradient-to-r from-gray-200 to-gray-100 rounded-lg border-2 border-gray-300 p-4 md:p-8 shadow-lg mt-8">
-        {/* Project Image with Graphic */}
-        <div className="relative h-48 md:h-auto overflow-hidden rounded-lg">
-          <div className="absolute inset-0 z-10 flex items-center justify-center">
-            <div className="bg-white p-4 rounded-full transform rotate-45 shadow-md">
-              <svg className="w-12 h-12 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-              </svg>
-            </div>
-          </div>
-          <Image src="/static/images/portal1.jpg" alt="Portal Management" layout="fill" objectFit="cover" className="rounded-lg" />
-        </div>
-
-        {/* Project Details */}
-        <div className="flex flex-col justify-center">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4">Portal Management</h2>
-          <p className="text-gray-700 mb-4">
-            This project is used for Portal Management. In this project I have used celery for running background task and scheduled task.I have mostly worked on authentication, time entry and calendar module.I have also explore myself in Django Permission in this project.
-          </p>
-          <div className="text-gray-700">
-            <h3 className="text-lg font-semibold mb-2">Tech Stack</h3>
-            <ul className="list-disc pl-6 mb-0">
-              <li>DRF</li>
-              <li>Celery</li>
-              <li>Postgres</li>
-              <li>EC2</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      {/* Third Project with Graphics */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-gradient-to-r from-gray-200 to-gray-100 rounded-lg border-2 border-gray-300 p-4 md:p-8 shadow-lg mt-8">
-        {/* Project Image with Graphic */}
-        <div className="relative h-48 md:h-auto overflow-hidden rounded-lg">
-          <div className="absolute inset-0 z-10 flex items-center justify-center">
-            <div className="bg-white p-4 rounded-full transform rotate-45 shadow-md">
-              <svg className="w-12 h-12 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-              </svg>
-            </div>
-          </div>
-          <Image src="/static/images/patrick-hendry-w5SgojGZooI-unsplash.jpg" alt="Portal Management" layout="fill" objectFit="cover" className="rounded-lg" />
-        </div>
-
-        {/* Project Details */}
-        <div className="flex flex-col justify-center">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4">Yoga Posture Detection</h2>
-          <p className="text-gray-700 mb-4">
-          This project utilizes YOLO and MediaPipe for yoga pose detection, a custom dataset from Roboflow, and a Large Language Model for correction, to provide real-time feedback on yoga pose alignment
-          </p>
-          <div className="text-gray-700">
-            <h3 className="text-lg font-semibold mb-2">Tech Stack</h3>
-            <ul className="list-disc pl-6 mb-0">
-              <li>Streamlit</li>
-              <li>LLM</li>
-              <li>YOLO model</li>
-              <li>Mediapipe</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div className='grid justify-center w-screen'>
-        <div className='mt-4 rounded-md bg-blue-300 text-center w-20 hover:bg-green-300'><Link href="/">Home</Link></div>
-      </div>
-    </div>
-
-  );
+    return ( <
+        div className = "min-h-screen bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 flex flex-col items-center py-10 px-2" >
+        <
+        h1 className = "text-4xl md:text-5xl font-extrabold text-center mb-12 text-gray-900 drop-shadow-lg" > Projects Highlight < /h1> { / * First Project Card * / } <
+        div className = "grid grid-cols-1 md:grid-cols-2 gap-6 bg-white/80 backdrop-blur-lg rounded-2xl border border-blue-200 p-6 md:p-10 shadow-2xl mb-10 hover:shadow-3xl transition duration-300" >
+        <
+        div className = "relative h-56 md:h-72 overflow-hidden rounded-xl flex items-center justify-center" >
+        <
+        Image src = "/static/images/Pizza On Your Way.png"
+        alt = "Pizza Delivery"
+        fill style = {
+            { objectFit: 'cover' }
+        }
+        className = "rounded-xl shadow-lg" / >
+        <
+        /div> <
+        div className = "flex flex-col justify-center px-2" >
+        <
+        h2 className = "text-2xl md:text-3xl font-bold mb-3 text-blue-700" > Pizza Delivery < /h2> <
+        p className = "text-gray-700 mb-4 text-base md:text-lg" >
+        This project is based on Pizza delivery as per user order.It uses Django Channels
+        for real - time database updates, Celery
+        for background tasks, and a React.js frontend. <
+        /p> <
+        div className = "text-gray-700" >
+        <
+        h3 className = "text-lg font-semibold mb-2" > Tech Stack < /h3> <
+        ul className = "list-disc pl-6 mb-0" >
+        <
+        li > DRF < /li> <
+        li > React js < /li> <
+        li > Celery < /li> <
+        li > Channels < /li> <
+        li > Redis < /li> < /
+        ul > <
+        /div> < /
+        div > <
+        /div> { / * Second Project Card * / } <
+        div className = "grid grid-cols-1 md:grid-cols-2 gap-6 bg-white/80 backdrop-blur-lg rounded-2xl border border-purple-200 p-6 md:p-10 shadow-2xl mb-10 hover:shadow-3xl transition duration-300" >
+        <
+        div className = "relative h-56 md:h-72 overflow-hidden rounded-xl flex items-center justify-center" >
+        <
+        Image src = "/static/images/portal1.jpg"
+        alt = "Portal Management"
+        fill style = {
+            { objectFit: 'cover' }
+        }
+        className = "rounded-xl shadow-lg" / >
+        <
+        /div> <
+        div className = "flex flex-col justify-center px-2" >
+        <
+        h2 className = "text-2xl md:text-3xl font-bold mb-3 text-purple-700" > Portal Management < /h2> <
+        p className = "text-gray-700 mb-4 text-base md:text-lg" >
+        This project is used
+        for portal management.It uses Celery
+        for background and scheduled tasks, and includes modules
+        for authentication, time entry, calendar, and Django permissions. <
+        /p> <
+        div className = "text-gray-700" >
+        <
+        h3 className = "text-lg font-semibold mb-2" > Tech Stack < /h3> <
+        ul className = "list-disc pl-6 mb-0" >
+        <
+        li > DRF < /li> <
+        li > Celery < /li> <
+        li > Postgres < /li> <
+        li > EC2 < /li> < /
+        ul > <
+        /div> < /
+        div > <
+        /div> { / * Third Project Card * / } <
+        div className = "grid grid-cols-1 md:grid-cols-2 gap-6 bg-white/80 backdrop-blur-lg rounded-2xl border border-pink-200 p-6 md:p-10 shadow-2xl mb-10 hover:shadow-3xl transition duration-300" >
+        <
+        div className = "relative h-56 md:h-72 overflow-hidden rounded-xl flex items-center justify-center" >
+        <
+        Image src = "/static/images/patrick-hendry-w5SgojGZooI-unsplash.jpg"
+        alt = "Yoga Posture Detection"
+        fill style = {
+            { objectFit: 'cover' }
+        }
+        className = "rounded-xl shadow-lg" / >
+        <
+        /div> <
+        div className = "flex flex-col justify-center px-2" >
+        <
+        h2 className = "text-2xl md:text-3xl font-bold mb-3 text-pink-700" > Yoga Posture Detection < /h2> <
+        p className = "text-gray-700 mb-4 text-base md:text-lg" >
+        This project utilizes YOLO and MediaPipe
+        for yoga pose detection, a custom dataset from Roboflow, and a Large Language Model
+        for correction, to provide real - time feedback on yoga pose alignment. <
+        /p> <
+        div className = "text-gray-700" >
+        <
+        h3 className = "text-lg font-semibold mb-2" > Tech Stack < /h3> <
+        ul className = "list-disc pl-6 mb-0" >
+        <
+        li > Streamlit < /li> <
+        li > LLM < /li> <
+        li > YOLO model < /li> <
+        li > Mediapipe < /li> < /
+        ul > <
+        /div> < /
+        div > <
+        /div> <
+        div className = "flex justify-center w-full mt-6" >
+        <
+        Link href = "/" >
+        <
+        div className = "bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 hover:from-pink-400 hover:to-purple-400 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out hover:scale-105 cursor-pointer text-center" > Home < /div> < /
+        Link > <
+        /div> < /
+        div >
+    );
 };
 
 export default Page;
