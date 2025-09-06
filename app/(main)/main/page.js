@@ -65,15 +65,15 @@ export default function Page() {
         <li > Jenkins CI / CD </li>
         <li > EC2 / S3 / lambda </li>
         </ul> </div> { /* AI Section */ } <div className = "backdrop-blur-lg bg-white/70 rounded-2xl shadow-xl p-7 flex flex-col items-center border border-pink-200 hover:shadow-2xl hover:scale-105 transition duration-300 ease-in-out">
-        <span className = "mb-3 text-pink-500" />
+        <span className = "mb-3 text-pink-500">
         <svg xmlns = 'http://www.w3.org/2000/svg'
         className = 'h-8 w-8'
         fill = 'none'
         viewBox = '0 0 24 24'
-        stroke = 'currentColor' > < path strokeLinecap = 'round'
+        stroke = 'currentColor' > <path strokeLinecap = 'round'
         strokeLinejoin = 'round'
         strokeWidth = { 2 }
-        d = 'M12 8c-1.657 0-3 1.343-3 3 0 1.657 1.343 3 3 3s3-1.343 3-3c0-1.657-1.343-3-3-3zm0 0V4m0 0C7.582 4 4 7.582 4 12c0 4.418 3.582 8 8 8s8-3.582 8-8c0-4.418-3.582-8-8-8z' /> </svg> </span> <p className = "font-extrabold text-xl text-pink-700 text-center mb-1" > AI / ML </p> <ul className = "list-disc ml-6 mt-2 text-gray-700" >
+        d = 'M12 8c-1.657 0-3 1.343-3 3 0 1.657 1.343 3 3 3s3-1.343 3-3c0-1.657-1.343-3-3-3zm0 0V4m0 0C7.582 4 4 7.582 4 12c0 4.418 3.582 8 8 8s8-3.582 8-8c0-4.418-3.582-8-8-8z'/> </svg> </span> <p className = "font-extrabold text-xl text-pink-700 text-center mb-1" > AI / ML </p> <ul className = "list-disc ml-6 mt-2 text-gray-700" >
         <li > LLM </li>
         <li > GenAI </li>
         <li > VisionAI </li>
@@ -83,6 +83,7 @@ export default function Page() {
         Home
         </button>
         </Link>
+        </div>
         </div>
         
     );
