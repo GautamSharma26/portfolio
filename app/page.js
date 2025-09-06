@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-const RootPageMainD = () => {
+export default function Page() {
   return (
   <div className='h-[calc(100vh-144px)] overflow-hidden overflow-y-auto bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 font-sans'>
   <div className="flex flex-col items-center justify-center py-10">
@@ -57,6 +57,4 @@ const RootPageMainD = () => {
       </div>
     </div>
   );
-};
-
-export default RootPageMainD;
+}

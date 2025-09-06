@@ -2,11 +2,12 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Page = () => {
+
+export default function Page() {
     return ( <
         div className = "min-h-screen bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 flex flex-col items-center py-10 px-2" >
         <
-        h1 className = "text-4xl md:text-5xl font-extrabold text-center mb-12 text-gray-900 drop-shadow-lg" > Projects Highlight < /h1> { / * First Project Card * / } <
+        h1 className = "text-4xl md:text-5xl font-extrabold text-center mb-12 text-gray-900 drop-shadow-lg" > Projects Highlight < /h1> { /* First Project Card */ } <
         div className = "grid grid-cols-1 md:grid-cols-2 gap-6 bg-white/80 backdrop-blur-lg rounded-2xl border border-blue-200 p-6 md:p-10 shadow-2xl mb-10 hover:shadow-3xl transition duration-300" >
         <
         div className = "relative h-56 md:h-72 overflow-hidden rounded-xl flex items-center justify-center" >
@@ -14,8 +15,7 @@ const Page = () => {
         Image src = "/static/images/Pizza On Your Way.png"
         alt = "Pizza Delivery"
         fill style = {
-            { objectFit: 'cover' }
-        }
+            { objectFit: 'cover' } }
         className = "rounded-xl shadow-lg" / >
         <
         /div> <
@@ -36,11 +36,11 @@ const Page = () => {
         li > React js < /li> <
         li > Celery < /li> <
         li > Channels < /li> <
-        li > Redis < /li> < /
-        ul > <
-        /div> < /
-        div > <
-        /div> { / * Second Project Card * / } <
+        li > Redis < /li> <
+        /ul> <
+        /div> <
+        /div> <
+        /div> { /* Second Project Card */ } <
         div className = "grid grid-cols-1 md:grid-cols-2 gap-6 bg-white/80 backdrop-blur-lg rounded-2xl border border-purple-200 p-6 md:p-10 shadow-2xl mb-10 hover:shadow-3xl transition duration-300" >
         <
         div className = "relative h-56 md:h-72 overflow-hidden rounded-xl flex items-center justify-center" >
@@ -48,8 +48,7 @@ const Page = () => {
         Image src = "/static/images/portal1.jpg"
         alt = "Portal Management"
         fill style = {
-            { objectFit: 'cover' }
-        }
+            { objectFit: 'cover' } }
         className = "rounded-xl shadow-lg" / >
         <
         /div> <
@@ -70,11 +69,11 @@ const Page = () => {
         li > DRF < /li> <
         li > Celery < /li> <
         li > Postgres < /li> <
-        li > EC2 < /li> < /
-        ul > <
-        /div> < /
-        div > <
-        /div> { / * Third Project Card * / } <
+        li > EC2 < /li> <
+        /ul> <
+        /div> <
+        /div> <
+        /div> { /* Third Project Card */ } <
         div className = "grid grid-cols-1 md:grid-cols-2 gap-6 bg-white/80 backdrop-blur-lg rounded-2xl border border-pink-200 p-6 md:p-10 shadow-2xl mb-10 hover:shadow-3xl transition duration-300" >
         <
         div className = "relative h-56 md:h-72 overflow-hidden rounded-xl flex items-center justify-center" >
@@ -82,8 +81,7 @@ const Page = () => {
         Image src = "/static/images/patrick-hendry-w5SgojGZooI-unsplash.jpg"
         alt = "Yoga Posture Detection"
         fill style = {
-            { objectFit: 'cover' }
-        }
+            { objectFit: 'cover' } }
         className = "rounded-xl shadow-lg" / >
         <
         /div> <
@@ -103,20 +101,18 @@ const Page = () => {
         li > Streamlit < /li> <
         li > LLM < /li> <
         li > YOLO model < /li> <
-        li > Mediapipe < /li> < /
-        ul > <
-        /div> < /
-        div > <
+        li > Mediapipe < /li> <
+        /ul> <
+        /div> <
+        /div> <
         /div> <
         div className = "flex justify-center w-full mt-6" >
         <
         Link href = "/" >
         <
-        div className = "bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 hover:from-pink-400 hover:to-purple-400 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out hover:scale-105 cursor-pointer text-center" > Home < /div> < /
-        Link > <
-        /div> < /
-        div >
+        div className = "bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 hover:from-pink-400 hover:to-purple-400 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out hover:scale-105 cursor-pointer text-center" > Home < /div> <
+        /Link> <
+        /div> <
+        /div>
     );
-};
-
-export default Page;
+}
