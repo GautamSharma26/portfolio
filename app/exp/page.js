@@ -1,11 +1,10 @@
 "use client";
-import React from 'react'
-import Image from 'next/image'
-import { useEffect } from 'react'
+import React, { useEffect } from 'react';
+import Image from 'next/image';
 import { Chart } from "chart.js";
 import Link from 'next/link';
 
-const ExpPage = () => {
+export default function Page() {
     useEffect(() => {
         const options = {
             scales: {
@@ -15,7 +14,7 @@ const ExpPage = () => {
             },
         };
         var ctx = document.getElementById('myChart').getContext('2d');
-        var myChart = new Chart(ctx, {
+        new Chart(ctx, {
             type: 'bar',
             data: {
                 labels: ["Python Full Stack - 3Y Cont.."],
@@ -25,13 +24,15 @@ const ExpPage = () => {
                         borderColor: "rgb(75, 192, 192)",
                         backgroundColor: "rgb(75, 192, 192,0.5)",
                         borderWidth: 2
-                    }, {
+                    },
+                    {
                         data: [80],
                         label: "FastApi/Flask",
                         borderColor: "rgb(255, 205, 86)",
                         backgroundColor: "rgb(255, 205, 86,0.5)",
                         borderWidth: 2
-                    }, {
+                    },
+                    {
                         data: [90],
                         label: "Drf/Django",
                         borderColor: "rgb(255, 99, 132)",
@@ -63,7 +64,8 @@ const ExpPage = () => {
             },
             options: options,
         });
-    }, [])
+    }, []);
+
     return ( <
         div className = "min-h-screen bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 flex flex-col items-center justify-center py-10" >
         <
@@ -102,7 +104,5 @@ const ExpPage = () => {
         /Link> <
         /div> <
         /div>
-    )
+    );
 }
-
-export default ExpPage
