@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const MainPage = () => {
+export default function Page() {
     return ( <
         div className = "min-h-screen bg-gradient-to-br from-purple-200 via-pink-100 to-blue-100 px-4 py-10 flex flex-col items-center justify-center" >
         <
@@ -26,9 +26,7 @@ const MainPage = () => {
         li > Django Rest Framework < /li> <
         li > FastAPI < /li> <
         /ul> <
-        /div>
-
-        { /* JavaScript Section */ } <
+        /div> { /* JavaScript Section */ } <
         div className = "backdrop-blur-lg bg-white/70 rounded-2xl shadow-xl p-7 flex flex-col items-center border border-yellow-200 hover:shadow-2xl hover:scale-105 transition duration-300 ease-in-out" >
         <
         span className = "mb-3 text-yellow-500" >
@@ -49,9 +47,7 @@ const MainPage = () => {
         li > React Js < /li> <
         li > Next Js < /li> <
         /ul> <
-        /div>
-
-        { /* DevOps Section */ } <
+        /div> { /* DevOps Section */ } <
         div className = "backdrop-blur-lg bg-white/70 rounded-2xl shadow-xl p-7 flex flex-col items-center border border-blue-200 hover:shadow-2xl hover:scale-105 transition duration-300 ease-in-out" >
         <
         span className = "mb-3 text-blue-500" >
@@ -73,9 +69,7 @@ const MainPage = () => {
         li > Jenkins CI / CD < /li> <
         li > EC2 / S3 / lambda < /li> <
         /ul> <
-        /div>
-
-        { /* AI Section */ } <
+        /div> { /* AI Section */ } <
         div className = "backdrop-blur-lg bg-white/70 rounded-2xl shadow-xl p-7 flex flex-col items-center border border-pink-200 hover:shadow-2xl hover:scale-105 transition duration-300 ease-in-out" >
         <
         span className = "mb-3 text-pink-500" >
@@ -91,14 +85,13 @@ const MainPage = () => {
         /span> <
         p className = "font-extrabold text-xl text-pink-700 text-center mb-1" > AI / ML < /p> <
         ul className = "list-disc ml-6 mt-2 text-gray-700" >
-        <li > LLM < /li> <
+        <
+        li > LLM < /li> <
         li > GenAI < /li> <
         li > VisionAI < /li> <
         /ul> <
         /div> <
-        /div>
-
-        { /* Home Button */ } <
+        /div> { /* Home Button */ } <
         div className = "flex justify-center mt-12" >
         <
         Link href = "/" >
@@ -110,6 +103,4 @@ const MainPage = () => {
         /div> <
         /div>
     );
-};
-
-export default MainPage;
+}
