@@ -245,7 +245,9 @@ export default function ContactPage() {
 
         <div className="text-center">
           <Link href="/">
-            <button className="bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2 px-6 rounded-lg transition duration-300">Back to Home</button>
+            <button className="bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2 px-6 rounded-lg transition duration-300">
+              Back to Home
+            </button>
           </Link>
         </div>
       </div>

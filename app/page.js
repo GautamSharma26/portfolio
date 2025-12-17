@@ -54,6 +54,7 @@ export default function Page() {
                     </div>
                 </div>
 
+
                 {/* About Section */}
                 <div className="card-base w-full max-w-4xl mb-10">
                     <h2 className="text-2xl font-bold text-gray-800 mb-3">About Me</h2>
@@ -64,6 +65,7 @@ export default function Page() {
                         Passionate about solving real-world problems through technology, I enjoy collaborating with teams, learning new tools, and contributing to open-source projects.
                     </p>
                 </div>
+
 
                 {/* Quick Stats */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-4xl mb-10">
@@ -84,6 +86,7 @@ export default function Page() {
                         <div className="text-sm text-gray-600">Dedicated</div>
                     </div>
                 </div>
+
 
                 {/* Container for grid content */}
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 w-full max-w-4xl px-4 py-2 mb-10">
@@ -156,6 +159,7 @@ export default function Page() {
                         </div>
                     </Link>
                 </div>
+
 
                 {/* CTA Section */}
                 <div className="card-base bg-gradient-to-r from-purple-50 to-pink-50 w-full max-w-4xl mb-10 text-center border-2 border-purple-200">
