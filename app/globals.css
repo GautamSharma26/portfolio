@@ -1,29 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+:root {
+    --bg: #f8fafc;
+    --muted: #6b7280;
+    --accent: #7c3aed;
+}
+
+html,
+body,
+#__next {
+    height: 100%;
+}
+
+
+/* Base reset and typography */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    background: var(--bg);
+    color: #111827;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #0f172a;
+    margin: 0
+}
+
+p {
+    margin: 0
+}
+
+a {
+    color: inherit
+}
+
+.container-centered {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem
+}
+
+
+/* Small utility to calm overly-bright gradients in header/footer */
+
+.brand-strip {
+    background: linear-gradient(90deg, rgba(124, 58, 237, 0.95), rgba(236, 72, 153, 0.92));
+}
+
+
+/* accessible focus rings for keyboard users */
+
+:focus {
+    outline: 2px solid rgba(124, 58, 237, 0.15);
+    outline-offset: 3px
+}
+
+
+/* Card base */
+
+.card-base {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 1rem;
+    border: 1px solid rgba(15, 23, 42, 0.06);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06)
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* globals.css */
 
-html,
-body {
-    height: 100%;
-    margin: 0;
-}
 
-body {
-    display: flex;
-    flex-direction: column;
-}
+/* keep html/body rules at top of file to avoid duplication (defined earlier) */
 
-.header {
-    /* Adjust header styles as needed */
-}
 
-.footer {
-    /* Adjust footer styles as needed */
-    height: 100px;
-    /* Adjust the height according to your footer */
-}
+/* header/footer fine-tuned via component classes */
 
 .layout-container {
     display: flex;
